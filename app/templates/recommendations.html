@@ -1,0 +1,29 @@
+<!-- THIS IS FOR OUR RECOMMENDATIONS PAGE  -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Spotify Song Suggester
+        </title>
+        <link rel="stylesheet" href="https://unpkg.com/picnic">
+    </head>
+
+    <body>
+            {%  block content %}
+                <div>
+                    <h1>
+                        Songs similar to
+                        <br> {{ song_title }}:
+                    </h1>
+                </div>
+                <ul>
+                    {% for song in suggestions %}
+                    <li>
+                        {{ song }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            {% endblock %}
+    </body>
+</html>

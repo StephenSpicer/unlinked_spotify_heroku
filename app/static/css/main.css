@@ -1,0 +1,14 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size:18px;
+    justify-content: space-around;
+}
+
+.flex-item {
+    flex:50%;
+}
+
+.flex-item-bottom {
+    flex:33.3333%
+}
